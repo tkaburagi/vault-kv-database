@@ -1,0 +1,12 @@
+spring.cloud.vault:
+  token: ${VAULT_TOKEN}
+  scheme: http
+  host: 127.0.0.1
+  port: 8200
+  authentication: TOKEN
+  kv:
+    enabled: true
+    backend: secret
+    profile-separator: '/'
+    default-context: application
+    application-name: vault-kv-demoapp
